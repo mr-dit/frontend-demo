@@ -306,10 +306,42 @@ body {
 .img {
     vertical-align: top;
 } */
+
+/* ----------------------text----------------- */
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Acme';
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+}
+.text{
+    display: flex;
+    justify-content: center; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+/* --------------------------------------- */
+
+
 /* ----------------------about----------------- */
 .page_about { }
 .about { 
-    padding: 100px 0px 80px 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 .about_container { }
 ._container { }
@@ -329,38 +361,24 @@ body {
  }
 
 .about_title { 
-    display: flex;
-    justify-content: center;
-    font-family: 'Acme';
-    font-size: 36px;
-    line-height: 48px;
-    text-transform: uppercase;
+    
+  
 }
-.about_line { 
+.all_line { 
     display: flex;
     justify-content: center;
 }
 .line { }
 .about_subtitle {
-    display: flex;
-    justify-content: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: center;
+    
+   
  }
 .about_text {
-    display: flex;
-    justify-content: center; 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
+    
+
 }
 .about_image{
-        /* flex: 0 0 475px; */
+        flex: 0 0 37%;
         min-width: 242px;
         
         /* min-height: 242px; */
@@ -378,4 +396,123 @@ body {
     .about_content{
         margin: 0;
     }
+}
+/* --------------------book-------------- */
+.page_book { }
+.book {
+    padding: 40px 0 0 0;
+ }
+.book_container { }
+._container { }
+.book_body {
+    display: flex;
+ }
+.book_image { 
+    flex: 0 0 37%;
+    /* min-width: 242px; */
+        
+        /* min-height: 242px; */
+        
+        /* height: auto; */
+        /* height: 475px; */
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 1px 1px 50px 1px #3f3f3f;
+}
+
+.book_content {
+    display: flex;
+    flex: 1 1;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 591px;
+    margin-left: 115px;
+ }
+ .book_content > *:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+}
+@media (max-width: 640px) {
+	.book_body{
+        flex-flow: column;
+    }
+    .book_content{
+        margin: 0;
+    }
+    .book_image{
+        margin-bottom: 20px;
+    }
+}
+.book_form{
+    display: flex;
+    flex-flow: column;
+    /* max-width: 565px; */
+    /* width: 565px; */
+    width: 100%;
+}
+
+.row1 { }
+.row { 
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.book_form > *:not(:last-child){
+    margin-bottom: 15px;
+}
+.input { 
+    background: #E5E5E5;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 277px;
+    height: 60px;
+    display: block;
+    font-weight: 400;
+    line-height: 19px;
+    text-indent: 20px;
+    color: rgba(51, 51, 51, 0.5);
+    outline: none;
+    cursor: pointer;
+}
+.input:not(:last-child){
+    margin-right: 15px;
+}
+.row2 { }
+.row3 { }
+.form_button { 
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+background-color: #E8C300;
+color: #fff;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+text-transform: uppercase;
+border-radius: 5px;
+}
+
+.book_title { }
+.title { }
+.book_line { }
+.line { }
+.book_subtitle { }
+.subtitle { }
+.book_text { }
+.text { }
+
+.book_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    height: 100px;
+ }
+.book_footer_content { 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.5);
+    
 }
